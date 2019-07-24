@@ -10,13 +10,13 @@ function App() {
       <header className="App-header" style={{backgroundColor:'#110039'}}>
         <img src={logo} className="App-logo" alt="banner" />
         <h3>
-          Cloud-based genetic crypto trading, wherever you go
+          Cloud-based Evolutionary Digital Asset Trading
         </h3>
         <h2>Coming Fall 2019</h2>
         <br />
         <Form>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Stay up-to-date, join our mailing list!</Form.Label>
+            <Form.Label>Stay up-to-date by joining our mailing list!</Form.Label>
             <Form.Control type="email" placeholder="Your email"/>
             <Form.Text className="text-muted">
               Your email is completely confidential.

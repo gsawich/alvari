@@ -112,11 +112,6 @@ function RTL(props) {
               <Sidebar
                 routes={routes}
                 rtlActive
-                logo={{
-                  outterLink: "https://www.creative-tim.com/",
-                  text: "الإبداعية تيم",
-                  imgSrc: logo,
-                }}
                 toggleSidebar={toggleSidebar}
               />
               <div className="main-panel" ref={mainPanelRef} data={color}>

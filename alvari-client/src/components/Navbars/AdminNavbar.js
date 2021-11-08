@@ -65,7 +65,7 @@ function AdminNavbar(props) {
             </div>
             <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               <div className="navbar-brand text-center" style={{ width: 'fit-content', height: 'fit-content'}}>
-                <img src={banner}  style={{ width: '10em' }}/>
+                <img src={banner}  style={{ width: '13em' }}/>
               </div>
             </NavbarBrand>
           </div>

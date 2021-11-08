@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react'
 import { Form, Button } from 'react-bootstrap'
 
 import './App.css'
@@ -51,7 +51,7 @@ function App() {
         </Form>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

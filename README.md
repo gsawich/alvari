@@ -1,6 +1,6 @@
 # alvari.io
 
-Alvari.io is a cloud-based genetic algorithm applied to crypto trading.
+Alvari.io is a hive-based genetic algorithm applied to crypto trading.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

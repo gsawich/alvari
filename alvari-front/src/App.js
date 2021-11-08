@@ -1,22 +1,23 @@
 import React, { useState, useRef } from 'react';
 import { Form, Button } from 'react-bootstrap'
-import logo from './alvari.svg';
+
 import './App.css'
 import './bootstrap/css/bootstrap.min.css'
-
-const apiKey = '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'
+import { apiKey } from './secrets.js'
+import logo from './images/alvari-banner.png'
 
 function App() {
   const [bText, setText] = useState('Get Updates')
   const emailRef = useRef(null)
+
   return (
     <div className="App">
       <header className="App-header" style={{backgroundColor:'#110039'}}>
         <img src={logo} className="App-logo" alt="banner" />
         <h3>
-          Cloud-based Evolutionary Digital Asset Trading
+          Next Generation Evolutionary Digital Asset Trading
         </h3>
-        <h1>Coming Q4 2019</h1>
+        <h1>Coming Q2 2022</h1>
         <div>
         <br />
         <br />

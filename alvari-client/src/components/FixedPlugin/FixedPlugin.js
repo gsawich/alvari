@@ -1,12 +1,12 @@
-import React from "react"
+import React, {useState} from "react"
 
 // reactstrap components
-import { Button, Dropdown, DropdownToggle, Badge } from "reactstrap"
+import { Dropdown, DropdownToggle, Badge } from "reactstrap"
 import { ThemeContext, themes } from "contexts/ThemeContext"
 import { backgroundColors } from "contexts/BackgroundColorContext"
 
 function FixedPlugin(props) {
-  const [dropDownIsOpen, setdropDownIsOpen] = React.useState(false)
+  const [dropDownIsOpen, setdropDownIsOpen] = useState(false)
   const handleClick = () => {
     setdropDownIsOpen(!dropDownIsOpen)
   }

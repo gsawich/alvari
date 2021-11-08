@@ -1,10 +1,9 @@
-import React from "react"
+import React, {useState} from "react"
 // nodejs library that concatenates classes
 import classNames from "classnames"
 
 // reactstrap components
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -19,9 +18,8 @@ import {
 } from "reactstrap"
 
 function AdminNavbar(props) {
-  const [collapseOpen, setcollapseOpen] = React.useState(false)
-  const [modalSearch, setmodalSearch] = React.useState(false)
-  const [color, setcolor] = React.useState("navbar-transparent")
+  const [collapseOpen, setcollapseOpen] = useState(false)
+  const [color, setcolor] = useState("navbar-transparent")
   React.useEffect(() => {
     window.addEventListener("resize", updateColor)
     // Specify how to clean up after this effect:
@@ -46,10 +44,7 @@ function AdminNavbar(props) {
     }
     setcollapseOpen(!collapseOpen)
   }
-  // this function is to open the Search modal
-  const toggleModalSearch = () => {
-    setmodalSearch(!modalSearch)
-  }
+
   return (
     <>
       <Navbar className={classNames("navbar-absolute", color)} expand="lg">
@@ -67,7 +62,7 @@ function AdminNavbar(props) {
               </NavbarToggler>
             </div>
             <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
-              {props.brandText}
+              <i href="/public/alvari-banner.png"/>
             </NavbarBrand>
           </div>
           <NavbarToggler onClick={toggleCollapse}>

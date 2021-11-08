@@ -52,20 +52,20 @@ let chart1_2_options = {
       },
     ],
   },
-};
+}
 
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
 let chartExample1 = {
   data1: (canvas) => {
-    let ctx = canvas.getContext("2d");
+    let ctx = canvas.getContext("2d")
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)")
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)")
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)") //blue colors
 
     return {
       labels: [
@@ -101,16 +101,16 @@ let chartExample1 = {
           data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
         },
       ],
-    };
+    }
   },
   data2: (canvas) => {
-    let ctx = canvas.getContext("2d");
+    let ctx = canvas.getContext("2d")
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)")
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)")
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)") //blue colors
 
     return {
       labels: [
@@ -146,16 +146,16 @@ let chartExample1 = {
           data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
         },
       ],
-    };
+    }
   },
   data3: (canvas) => {
-    let ctx = canvas.getContext("2d");
+    let ctx = canvas.getContext("2d")
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)")
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)")
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)") //blue colors
 
     return {
       labels: [
@@ -191,23 +191,23 @@ let chartExample1 = {
           data: [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130],
         },
       ],
-    };
+    }
   },
   options: chart1_2_options,
-};
+}
 
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
 let chartExample2 = {
   data: (canvas) => {
-    let ctx = canvas.getContext("2d");
+    let ctx = canvas.getContext("2d")
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)")
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)")
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)") //blue colors
 
     return {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
@@ -230,23 +230,23 @@ let chartExample2 = {
           data: [80, 100, 70, 80, 120, 80],
         },
       ],
-    };
+    }
   },
   options: chart1_2_options,
-};
+}
 
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
 let chartExample3 = {
   data: (canvas) => {
-    let ctx = canvas.getContext("2d");
+    let ctx = canvas.getContext("2d")
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    gradientStroke.addColorStop(1, "rgba(72,72,176,0.1)");
-    gradientStroke.addColorStop(0.4, "rgba(72,72,176,0.0)");
-    gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
+    gradientStroke.addColorStop(1, "rgba(72,72,176,0.1)")
+    gradientStroke.addColorStop(0.4, "rgba(72,72,176,0.0)")
+    gradientStroke.addColorStop(0, "rgba(119,52,169,0)") //purple colors
 
     return {
       labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
@@ -263,7 +263,7 @@ let chartExample3 = {
           data: [53, 20, 10, 80, 100, 45],
         },
       ],
-    };
+    }
   },
   options: {
     maintainAspectRatio: false,
@@ -312,20 +312,20 @@ let chartExample3 = {
       ],
     },
   },
-};
+}
 
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
 const chartExample4 = {
   data: (canvas) => {
-    let ctx = canvas.getContext("2d");
+    let ctx = canvas.getContext("2d")
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    gradientStroke.addColorStop(1, "rgba(66,134,121,0.15)");
-    gradientStroke.addColorStop(0.4, "rgba(66,134,121,0.0)"); //green colors
-    gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
+    gradientStroke.addColorStop(1, "rgba(66,134,121,0.15)")
+    gradientStroke.addColorStop(0.4, "rgba(66,134,121,0.0)") //green colors
+    gradientStroke.addColorStop(0, "rgba(66,134,121,0)") //green colors
 
     return {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
@@ -348,7 +348,7 @@ const chartExample4 = {
           data: [90, 27, 60, 12, 80],
         },
       ],
-    };
+    }
   },
   options: {
     maintainAspectRatio: false,
@@ -401,11 +401,11 @@ const chartExample4 = {
       ],
     },
   },
-};
+}
 
 module.exports = {
   chartExample1, // in src/views/Dashboard.js
   chartExample2, // in src/views/Dashboard.js
   chartExample3, // in src/views/Dashboard.js
   chartExample4, // in src/views/Dashboard.js
-};
+}

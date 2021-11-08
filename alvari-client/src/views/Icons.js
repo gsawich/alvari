@@ -1,8 +1,8 @@
 
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import { Card, CardHeader, CardBody, Row, Col } from "reactstrap"
 
 function Icons() {
   return (
@@ -1127,7 +1127,7 @@ function Icons() {
         </Row>
       </div>
     </>
-  );
+  )
 }
 
-export default Icons;
+export default Icons

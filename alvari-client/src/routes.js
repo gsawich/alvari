@@ -1,12 +1,9 @@
 
-import Dashboard from "views/Dashboard.js";
-import Icons from "views/Icons.js";
-import Map from "views/Map.js";
-import Notifications from "views/Notifications.js";
-import Rtl from "views/Rtl.js";
-import TableList from "views/TableList.js";
-import Typography from "views/Typography.js";
-import UserProfile from "views/UserProfile.js";
+import Dashboard from "views/Dashboard.js"
+import Notifications from "views/Notifications.js"
+import TableList from "views/TableList.js"
+import Typography from "views/Typography.js"
+import UserProfile from "views/UserProfile.js"
 
 var routes = [
   {
@@ -44,5 +41,5 @@ var routes = [
     component: Typography,
     layout: "/admin",
   },
-];
-export default routes;
+]
+export default routes

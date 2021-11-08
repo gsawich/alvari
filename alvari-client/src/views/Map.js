@@ -1,17 +1,17 @@
 
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import { Card, CardHeader, CardBody, Row, Col } from "reactstrap"
 
 const MapWrapper = () => {
-  const mapRef = React.useRef(null);
+  const mapRef = React.useRef(null)
   React.useEffect(() => {
-    let google = window.google;
-    let map = mapRef.current;
-    let lat = "40.748817";
-    let lng = "-73.985428";
-    const myLatlng = new google.maps.LatLng(lat, lng);
+    let google = window.google
+    let map = mapRef.current
+    let lat = "40.748817"
+    let lng = "-73.985428"
+    const myLatlng = new google.maps.LatLng(lat, lng)
     const mapOptions = {
       scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
       styles: [
@@ -256,31 +256,31 @@ const MapWrapper = () => {
           ],
         },
       ],
-    };
+    }
 
-    map = new google.maps.Map(map, mapOptions);
+    map = new google.maps.Map(map, mapOptions)
 
     const marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
       animation: google.maps.Animation.DROP,
       title: "BLK Design System PRO React!",
-    });
+    })
 
     const contentString =
       '<div class="info-window-content"><h2>BLK Dashboard React</h2>' +
-      "<p>A freebie Admin for ReactStrap, Bootstrap, React, and React Hooks.</p></div>";
+      "<p>A freebie Admin for ReactStrap, Bootstrap, React, and React Hooks.</p></div>"
 
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
-    });
+    })
 
     google.maps.event.addListener(marker, "click", function () {
-      infowindow.open(map, marker);
-    });
-  }, []);
-  return <div ref={mapRef} />;
-};
+      infowindow.open(map, marker)
+    })
+  }, [])
+  return <div ref={mapRef} />
+}
 
 function Map() {
   return (
@@ -304,7 +304,7 @@ function Map() {
         </Row>
       </div>
     </>
-  );
+  )
 }
 
-export default Map;
+export default Map

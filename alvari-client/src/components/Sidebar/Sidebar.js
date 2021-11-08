@@ -1,48 +1,48 @@
 /*eslint-disable*/
-import React from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import React from "react"
+import { NavLink, Link, useLocation } from "react-router-dom"
 // nodejs library to set properties for components
-import { PropTypes } from "prop-types";
+import { PropTypes } from "prop-types"
 
 // javascript plugin used to create scrollbars on windows
-import PerfectScrollbar from "perfect-scrollbar";
+import PerfectScrollbar from "perfect-scrollbar"
 
 // reactstrap components
-import { Nav, NavLink as ReactstrapNavLink } from "reactstrap";
+import { Nav, NavLink as ReactstrapNavLink } from "reactstrap"
 import {
   BackgroundColorContext,
   backgroundColors,
-} from "contexts/BackgroundColorContext";
+} from "contexts/BackgroundColorContext"
 
-var ps;
+var ps
 
 function Sidebar(props) {
-  const location = useLocation();
-  const sidebarRef = React.useRef(null);
+  const location = useLocation()
+  const sidebarRef = React.useRef(null)
   // verifies if routeName is the one active (in browser input)
   const activeRoute = (routeName) => {
-    return location.pathname === routeName ? "active" : "";
-  };
+    return location.pathname === routeName ? "active" : ""
+  }
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(sidebarRef.current, {
         suppressScrollX: true,
         suppressScrollY: false,
-      });
+      })
     }
     // Specify how to clean up after this effect:
     return function cleanup() {
       if (navigator.platform.indexOf("Win") > -1) {
-        ps.destroy();
+        ps.destroy()
       }
-    };
-  });
+    }
+  })
   const linkOnClick = () => {
-    document.documentElement.classList.remove("nav-open");
-  };
-  const { routes, rtlActive, logo } = props;
-  let logoImg = null;
-  let logoText = null;
+    document.documentElement.classList.remove("nav-open")
+  }
+  const { routes, rtlActive, logo } = props
+  let logoImg = null
+  let logoText = null
   if (logo !== undefined) {
     if (logo.outterLink !== undefined) {
       logoImg = (
@@ -56,7 +56,7 @@ function Sidebar(props) {
             <img src={logo.imgSrc} alt="react-logo" />
           </div>
         </a>
-      );
+      )
       logoText = (
         <a
           href={logo.outterLink}
@@ -66,7 +66,7 @@ function Sidebar(props) {
         >
           {logo.text}
         </a>
-      );
+      )
     } else {
       logoImg = (
         <Link
@@ -78,7 +78,7 @@ function Sidebar(props) {
             <img src={logo.imgSrc} alt="react-logo" />
           </div>
         </Link>
-      );
+      )
       logoText = (
         <Link
           to={logo.innerLink}
@@ -87,7 +87,7 @@ function Sidebar(props) {
         >
           {logo.text}
         </Link>
-      );
+      )
     }
   }
   return (
@@ -103,7 +103,7 @@ function Sidebar(props) {
             ) : null}
             <Nav>
               {routes.map((prop, key) => {
-                if (prop.redirect) return null;
+                if (prop.redirect) return null
                 return (
                   <li
                     className={
@@ -121,20 +121,20 @@ function Sidebar(props) {
                       <p>{rtlActive ? prop.rtlName : prop.name}</p>
                     </NavLink>
                   </li>
-                );
+                )
               })}
             </Nav>
           </div>
         </div>
       )}
     </BackgroundColorContext.Consumer>
-  );
+  )
 }
 
 Sidebar.defaultProps = {
   rtlActive: false,
   routes: [{}],
-};
+}
 
 Sidebar.propTypes = {
   // if true, then instead of the routes[i].name, routes[i].rtlName will be rendered
@@ -153,6 +153,6 @@ Sidebar.propTypes = {
     // the image src of the logo
     imgSrc: PropTypes.string,
   }),
-};
+}
 
-export default Sidebar;
+export default Sidebar

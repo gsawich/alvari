@@ -1,5 +1,5 @@
 
-import React from "react";
+import React from "react"
 
 // reactstrap components
 import {
@@ -14,7 +14,7 @@ import {
   Input,
   Row,
   Col,
-} from "reactstrap";
+} from "reactstrap"
 
 function UserProfile() {
   return (
@@ -82,7 +82,7 @@ function UserProfile() {
         </Row>
       </div>
     </>
-  );
+  )
 }
 
-export default UserProfile;
+export default UserProfile

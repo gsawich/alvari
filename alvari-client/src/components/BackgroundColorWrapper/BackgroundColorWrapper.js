@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import {
   BackgroundColorContext,
   backgroundColors,
-} from "contexts/BackgroundColorContext";
+} from "contexts/BackgroundColorContext"
 
 export default function BackgroundColorWrapper(props) {
-  const [color, setColor] = useState(backgroundColors.blue);
+  const [color, setColor] = useState(backgroundColors.blue)
 
   function changeColor(color) {
-    setColor(color);
+    setColor(color)
   }
 
   return (
@@ -17,5 +17,5 @@ export default function BackgroundColorWrapper(props) {
     >
       {props.children}
     </BackgroundColorContext.Provider>
-  );
+  )
 }

@@ -1,8 +1,8 @@
 
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Card, CardHeader, CardBody, CardTitle, Row, Col } from "reactstrap";
+import { Card, CardHeader, CardBody, CardTitle, Row, Col } from "reactstrap"
 
 function Typography() {
   return (
@@ -192,7 +192,7 @@ function Typography() {
         </Row>
       </div>
     </>
-  );
+  )
 }
 
-export default Typography;
+export default Typography

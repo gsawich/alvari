@@ -1,7 +1,7 @@
 
-import React from "react";
+import React from "react"
 // react plugin for creating notifications over the dashboard
-import NotificationAlert from "react-notification-alert";
+import NotificationAlert from "react-notification-alert"
 
 // reactstrap components
 import {
@@ -14,33 +14,33 @@ import {
   CardTitle,
   Row,
   Col,
-} from "reactstrap";
+} from "reactstrap"
 
 function Notifications() {
-  const notificationAlertRef = React.useRef(null);
+  const notificationAlertRef = React.useRef(null)
   const notify = (place) => {
-    var color = Math.floor(Math.random() * 5 + 1);
-    var type;
+    var color = Math.floor(Math.random() * 5 + 1)
+    var type
     switch (color) {
       case 1:
-        type = "primary";
-        break;
+        type = "primary"
+        break
       case 2:
-        type = "success";
-        break;
+        type = "success"
+        break
       case 3:
-        type = "danger";
-        break;
+        type = "danger"
+        break
       case 4:
-        type = "warning";
-        break;
+        type = "warning"
+        break
       case 5:
-        type = "info";
-        break;
+        type = "info"
+        break
       default:
-        break;
+        break
     }
-    var options = {};
+    var options = {}
     options = {
       place: place,
       message: (
@@ -54,9 +54,9 @@ function Notifications() {
       type: type,
       icon: "tim-icons icon-bell-55",
       autoDismiss: 7,
-    };
-    notificationAlertRef.current.notificationAlert(options);
-  };
+    }
+    notificationAlertRef.current.notificationAlert(options)
+  }
   return (
     <>
       <div className="content">
@@ -218,7 +218,7 @@ function Notifications() {
         </Row>
       </div>
     </>
-  );
+  )
 }
 
-export default Notifications;
+export default Notifications

@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Button, Dropdown, DropdownToggle, Badge } from "reactstrap";
-import { ThemeContext, themes } from "contexts/ThemeContext";
-import { backgroundColors } from "contexts/BackgroundColorContext";
+import { Button, Dropdown, DropdownToggle, Badge } from "reactstrap"
+import { ThemeContext, themes } from "contexts/ThemeContext"
+import { backgroundColors } from "contexts/BackgroundColorContext"
 
 function FixedPlugin(props) {
-  const [dropDownIsOpen, setdropDownIsOpen] = React.useState(false);
+  const [dropDownIsOpen, setdropDownIsOpen] = React.useState(false)
   const handleClick = () => {
-    setdropDownIsOpen(!dropDownIsOpen);
-  };
+    setdropDownIsOpen(!dropDownIsOpen)
+  }
   return (
     <div className="fixed-plugin">
       <Dropdown isOpen={dropDownIsOpen} toggle={handleClick}>
@@ -26,7 +26,7 @@ function FixedPlugin(props) {
                   props.bgColor === backgroundColors.primary ? "active" : ""
                 }
                 onClick={() => {
-                  props.handleBgClick(backgroundColors.primary);
+                  props.handleBgClick(backgroundColors.primary)
                 }}
               />{" "}
               <Badge
@@ -35,7 +35,7 @@ function FixedPlugin(props) {
                   props.bgColor === backgroundColors.blue ? "active" : ""
                 }
                 onClick={() => {
-                  props.handleBgClick(backgroundColors.blue);
+                  props.handleBgClick(backgroundColors.blue)
                 }}
               />{" "}
               <Badge
@@ -44,7 +44,7 @@ function FixedPlugin(props) {
                   props.bgColor === backgroundColors.green ? "active" : ""
                 }
                 onClick={() => {
-                  props.handleBgClick(backgroundColors.green);
+                  props.handleBgClick(backgroundColors.green)
                 }}
               />{" "}
             </div>
@@ -70,7 +70,7 @@ function FixedPlugin(props) {
         </ul>
       </Dropdown>
     </div>
-  );
+  )
 }
 
-export default FixedPlugin;
+export default FixedPlugin

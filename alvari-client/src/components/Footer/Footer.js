@@ -1,8 +1,8 @@
 /*eslint-disable*/
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Container, Nav, NavItem, NavLink } from "reactstrap";
+import { Container, Nav, NavItem, NavLink } from "reactstrap"
 
 function Footer() {
   return (
@@ -16,7 +16,7 @@ function Footer() {
         </div>
       </Container>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

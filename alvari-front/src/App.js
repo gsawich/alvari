@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react'
 import { Form, Button } from 'react-bootstrap'
-import logo from './alvari.svg';
+import logo from './alvari.svg'
 import './App.css'
 import './bootstrap/css/bootstrap.min.css'
 
@@ -50,7 +50,7 @@ function App() {
         </Form>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

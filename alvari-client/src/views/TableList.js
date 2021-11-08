@@ -1,5 +1,5 @@
 
-import React from "react";
+import React from "react"
 
 // reactstrap components
 import {
@@ -10,7 +10,7 @@ import {
   Table,
   Row,
   Col,
-} from "reactstrap";
+} from "reactstrap"
 
 function Tables() {
   return (
@@ -147,7 +147,7 @@ function Tables() {
         </Row>
       </div>
     </>
-  );
+  )
 }
 
-export default Tables;
+export default Tables

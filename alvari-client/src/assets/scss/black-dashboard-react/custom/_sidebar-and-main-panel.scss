@@ -31,6 +31,7 @@
   box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.6);
   margin-top: 12em;
   margin-left: 20px;
+  margin-right: 20px;
   border-radius: 5px;
 
   .sidebar-wrapper{
@@ -412,22 +413,10 @@
   float: right;
   width: $full-width;
   min-height: 100vh;
-  border-top: 2px solid $primary;
   background: linear-gradient($background-black, $background-states-black);
+  margin-top: 0em;
 
   @include transitions (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
-
-  &[data="blue"]{
-    border-top: 2px solid $info;
-  }
-
-  &[data="green"]{
-    border-top: 2px solid $success;
-  }
-
-  &[data="primary"]{
-    border-top: 2px solid $primary;
-  }
 
   > .content {
     padding: 78px 30px 30px 280px;
@@ -549,6 +538,7 @@
     }
 
     .main-panel{
+      margin-top: 0em;
       > .content{
         padding-left: 130px;
       }
@@ -631,6 +621,7 @@
 
   .main-panel {
     width: 100%;
+    margin-top: 6em;
     .content {
       padding-left: 30px;
     }

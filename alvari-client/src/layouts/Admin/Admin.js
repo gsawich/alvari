@@ -62,7 +62,7 @@ function Admin(props) {
   }
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -96,15 +96,16 @@ function Admin(props) {
               }}
               toggleSidebar={toggleSidebar}
             />
-            <div className="main-panel" ref={mainPanelRef} data={color}>
-              <AdminNavbar
-                brandText={getBrandText(location.pathname)}
-                toggleSidebar={toggleSidebar}
-                sidebarOpened={sidebarOpened}
+            <AdminNavbar
+              brandText={getBrandText(location.pathname)}
+              toggleSidebar={toggleSidebar}
+              sidebarOpened={sidebarOpened}
               />
+            <div className="main-panel" ref={mainPanelRef} data={color}>
+
               <Switch>
                 {getRoutes(routes)}
-                <Redirect from="*" to="/admin/dashboard" />
+                <Redirect from="*" to="/dashboard" />
               </Switch>
               <Footer fluid />
             </div>

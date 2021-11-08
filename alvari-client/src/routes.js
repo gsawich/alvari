@@ -7,39 +7,39 @@ import UserProfile from "views/UserProfile.js"
 
 var routes = [
   {
-    path: "/dashboard",
+    path: "dashboard",
     name: "Dashboard",
     icon: "tim-icons icon-chart-pie-36",
     component: Dashboard,
-    layout: "/admin",
+    layout: "/",
   },
   {
-    path: "/notifications",
+    path: "notifications",
     name: "Notifications",
     icon: "tim-icons icon-bell-55",
     component: Notifications,
-    layout: "/admin",
+    layout: "/",
   },
   {
-    path: "/user-profile",
+    path: "user-profile",
     name: "User Profile",
     icon: "tim-icons icon-single-02",
     component: UserProfile,
-    layout: "/admin",
+    layout: "/",
   },
   {
-    path: "/tables",
+    path: "tables",
     name: "Table List",
     icon: "tim-icons icon-puzzle-10",
     component: TableList,
-    layout: "/admin",
+    layout: "/",
   },
   {
-    path: "/typography",
+    path: "typography",
     name: "Typography",
     icon: "tim-icons icon-align-center",
     component: Typography,
-    layout: "/admin",
+    layout: "/",
   },
 ]
 export default routes

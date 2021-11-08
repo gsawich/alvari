@@ -18,8 +18,7 @@ ReactDOM.render(
     <BackgroundColorWrapper>
       <BrowserRouter>
         <Switch>
-          <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-          <Redirect from="/" to="/admin/dashboard" />
+          <Route render={(props) => <AdminLayout {...props} />} />
         </Switch>
       </BrowserRouter>
     </BackgroundColorWrapper>

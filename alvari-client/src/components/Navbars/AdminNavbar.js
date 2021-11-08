@@ -64,7 +64,7 @@ function AdminNavbar(props) {
               </NavbarToggler>
             </div>
             <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
-              <div className="navbar-brand" style={{ width: 'fit-content', height: 'fit-content'}}>
+              <div className="navbar-brand text-center" style={{ width: 'fit-content', height: 'fit-content'}}>
                 <img src={banner}  style={{ width: '10em' }}/>
               </div>
             </NavbarBrand>

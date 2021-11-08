@@ -29,7 +29,7 @@
   background-position: center center;
   display: block;
   box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.6);
-  margin-top: 80px;
+  margin-top: 12em;
   margin-left: 20px;
   border-radius: 5px;
 
@@ -117,21 +117,7 @@
 
     // @extend .animation-transition-general;
   }
-  .logo-tim{
-    border-radius: 50%;
-    border: 1px solid #333;
-    display: block;
-    height: 61px;
-    width: 61px;
-    float: left;
-    overflow: hidden;
-
-    img{
-      width: 60px;
-      height: 60px;
-    }
-  }
-
+ 
   .nav{
     margin-top: 20px;
     display: block;
@@ -324,21 +310,6 @@
       font-weight: $font-weight-normal;
       line-height: 30px;
       overflow: hidden;
-    }
-  }
-
-  .logo-tim{
-    border-radius: 50%;
-    border: 1px solid #333;
-    display: block;
-    height: 61px;
-    width: 61px;
-    float: left;
-    overflow: hidden;
-
-    img{
-      width: 60px;
-      height: 60px;
     }
   }
 

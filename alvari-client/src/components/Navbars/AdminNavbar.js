@@ -17,6 +17,8 @@ import {
   NavbarToggler,
 } from "reactstrap"
 
+import banner from "../../assets/img/alvari-banner.png"
+
 function AdminNavbar(props) {
   const [collapseOpen, setcollapseOpen] = useState(false)
   const [color, setcolor] = useState("navbar-transparent")
@@ -62,7 +64,9 @@ function AdminNavbar(props) {
               </NavbarToggler>
             </div>
             <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
-              <i href="/public/alvari-banner.png"/>
+              <div className="navbar-brand" style={{ width: 'fit-content', height: 'fit-content'}}>
+                <img src={banner}  style={{ width: '10em' }}/>
+              </div>
             </NavbarBrand>
           </div>
           <NavbarToggler onClick={toggleCollapse}>
